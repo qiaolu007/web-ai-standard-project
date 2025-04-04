@@ -1,0 +1,41 @@
+# 配置数据库的连接信息
+spring:
+  application:
+    name: tlias-ai-project
+
+    # 数据库连接信息
+  datasource:
+    url: jdbc:mysql://localhost:3306/tlias
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  #配置文件存储大小
+  servlet:
+    multipart:
+      max-file-size: 10MB  #单个文件大小
+      max-request-size: 100MB # 请求文件大小(有可能不是一个,所以需要设置大一些)
+
+# Mybatis
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true #数据封装,驼峰映射
+
+# 分页插件属性配置
+pagehelper:
+  reasonable: true #分页合理化参数，默认值为false。当该参数设置为true时，
+  #pageNum<=0时会查询第一页，pageNum>pages（超过总数时），会查询最后一页。默认false 时，直接根据参数进行查询
+  helper-dialect: mysql
+
+# 配置事物管理日志级别----注意冒号后面需要空格
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
+
+#阿里云对象存储oss属性配置
+aliyun:
+  oss:
+    endPoint: https://oss-cn-beijing.aliyuncs.com
+    bucketName: qiaolu-java-ai
+    region: cn-beijing
