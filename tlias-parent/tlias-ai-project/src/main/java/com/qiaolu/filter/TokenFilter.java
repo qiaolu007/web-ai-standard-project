@@ -1,7 +1,7 @@
-package com.qiaolu.utils;
+package com.qiaolu.filter;
 
+import com.qiaolu.utils.JwtUtil;
 import jakarta.servlet.*;
-import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;

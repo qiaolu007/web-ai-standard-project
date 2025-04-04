@@ -4,10 +4,8 @@ import com.qiaolu.pojo.OperateLog;
 import com.qiaolu.pojo.PageResult;
 import com.qiaolu.pojo.Result;
 import com.qiaolu.service.LogService;
-import org.jacoco.agent.rt.internal_43f5073.core.internal.flow.IFrame;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController

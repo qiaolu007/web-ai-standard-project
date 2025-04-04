@@ -8,7 +8,6 @@ import com.qiaolu.mapper.EmpMapper;
 import com.qiaolu.pojo.*;
 import com.qiaolu.service.EmpService;
 import com.qiaolu.utils.JwtUtil;
-import io.jsonwebtoken.Jwts;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
